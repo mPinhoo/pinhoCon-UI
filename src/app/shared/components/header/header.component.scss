@@ -1,0 +1,28 @@
+@import "../../../../assets/css/colors";
+
+.container {
+  border-top-left-radius: 10px;
+  background-color: $color-System-Backgound;
+  border: 1px solid $color-System-Border;
+  height: 3%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title {
+  margin-top: 0.1%;
+  margin-left: 1%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $color-System-Grey;
+}
+
+.btnExit {
+  color: $color-System-Black;
+  padding-right: 10px;
+}
+
+.btnExit:hover{
+  color: $color-System-Red
+}

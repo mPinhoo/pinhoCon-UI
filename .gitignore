@@ -1,0 +1,26 @@
+/.angular/cache
+.angular/cache
+node_modules
+node_modules.nosync
+dist
+**/.DS_Store
+.idea/
+package-lock.json
+yarn.lock
+yarn-error.log
+
+# Env file
+*.env
+
+# custom files
+/src/environments/environment.ts
+
+# VS Code
+.vscode
+
+# Coverage
+coverage
+
+
+# Sonar
+.scannerwork

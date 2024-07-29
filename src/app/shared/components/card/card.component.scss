@@ -1,0 +1,27 @@
+@import '../../../../assets/css/colors';
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.card-content {
+    width: 20%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+p {
+    color: $color-System-Grey;
+    text-align: center;
+}
+

@@ -1,0 +1,42 @@
+@import "../../../assets/css/colors";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    $color-System-White,
+    $color-System-Grey
+  );
+}
+
+.container-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.image-logo {
+  max-width: 70%;
+  max-height: 70%;
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  color: $color-System-LigthGrey;
+  text-align: center;
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+p {
+  color: $color-System-LigthGrey;
+  text-align: center;
+}

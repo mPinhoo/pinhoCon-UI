@@ -1,0 +1,56 @@
+@import "../../../../assets/css/colors";
+
+td,
+th {
+  width: auto;
+}
+
+th {
+  font-weight: bold;
+}
+
+table {
+  box-shadow: none;
+  border-bottom: 2px solid $color-System-Border;
+  white-space: nowrap;
+}
+
+.container{
+  overflow-x: auto;
+  width: auto;
+  min-width: 97%;
+  overflow-y: auto;
+  height: auto;
+  max-height: 580px;
+}
+
+.icon-edit:hover {
+  cursor: pointer;
+  color: $color-System-Blue;
+}
+
+.icon-delete:hover {
+  cursor: pointer;
+  color: $color-System-Red;
+}
+
+.icon-delete {
+  margin-left: 2%;
+}
+
+.icon-eye:hover {
+  cursor: pointer;
+  color: $color-System-Blue;
+}
+
+.text-green {
+  color: $color-System-Green;
+}
+
+.text-yellow {
+  color: $color-System-Yellow;
+}
+
+.text-red {
+  color: $color-System-Red;
+}

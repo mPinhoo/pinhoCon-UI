@@ -1,0 +1,56 @@
+<mat-drawer-container class="container">
+  <mat-drawer class="divMenuOpen" #menuLateralOpen>
+
+    <mat-accordion class="menuOpen">
+      <div>
+        <img class="logoMenuOpen" src="../../../../assets/images/logo.png">
+      </div>
+      <mat-expansion-panel class="divButton">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon class="iconx" fontIcon="home"></mat-icon>
+            <button class="buttonInt" (click)="menuLateralOpen.toggle()" (click)="routeNavigation('dashboard')"> {{
+              'HOME'}}</button>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel class="divButton">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon class="iconx" fontIcon="cottage"></mat-icon>
+            <a class="buttonInt">{{ 'PORPERTIES' | translate}} </a>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button class="buttonInt" (click)="menuLateralOpen.toggle()" (click)="routeNavigation('all-properties')">{{'All properties'}}</button>
+        <button class="buttonInt" (click)="menuLateralOpen.toggle()" (click)="routeNavigation('')">{{''}}</button>
+        <button class="buttonInt" (click)="menuLateralOpen.toggle()" (click)="routeNavigation('add-properties')">{{'Add Propertie'}}</button>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel class="divButton">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon class="iconx" fontIcon="person"></mat-icon>
+            <a class="buttonInt"> {{ 'AGENTS'}}</a>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button class="buttonInt" (click)="routeNavigation('all-agents')">{{ 'All Agents'}}</button>
+        <button class="buttonInt" (click)="routeNavigation('')">{{ ''}}</button>
+        <button class="buttonInt" (click)="routeNavigation('add-agent')">{{ 'Add Agents'}}</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-accordion (mouseover)="menuLateralOpen.toggle()" class="menuClosed">
+      <div>
+        <img class="logoMenuClose" src="../../../../assets/images/logomini.png">
+      </div>
+      <div class="divButton">
+        <button class="button"><mat-icon class="iconx" fontIcon="home"></mat-icon></button>
+        <button class="button"><mat-icon class="iconx" fontIcon="cottage"></mat-icon></button>
+        <button class="button"><mat-icon class="iconx" fontIcon="person"></mat-icon></button>
+      </div>
+    </mat-accordion>
+  </mat-drawer-content>
+</mat-drawer-container>

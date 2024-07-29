@@ -1,0 +1,42 @@
+@import "../../assets/css/colors";
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .menu{
+    height: 100%; 
+    width: 4%; 
+    min-width: 30px;
+  }
+
+  .router{
+    height: 100%; 
+    width: 96%;
+  }
+
+  .h-100{
+    height: 100%;
+  }
+
+  /* Container */
+.container {
+  width: 100%;
+  background-color: $color-System-Black;
+} 
+
+.subContainer{
+  background-color: $color-System-Backgound;
+  width: 100%;
+  height: 96.8%;
+}
+
+.buttonBack{
+  border: none;
+  width: 4%;
+  cursor: pointer;  
+  margin-top: 1%;
+  margin-left: 2%;
+}

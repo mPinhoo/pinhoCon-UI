@@ -1,0 +1,33 @@
+@import "../../../../assets/css/colors";
+
+label {
+  font-weight: bold;
+}
+
+.formInput24vw {
+  width: 24vw;
+}
+
+.input-login {
+  width: 18vw;
+}
+
+.input-system {
+  width: 100%;
+}
+
+.input-table {
+  border-radius: 8px;
+  border: 1px solid $color-System-LigthGrey;
+  width: 80px;
+  height: 35px;
+}
+
+::ng-deep html {
+  --mdc-filled-text-field-caret-color: $colorSystemBlack;
+  --mdc-filled-text-field-focus-active-indicator-color: $colorSystemBlack;
+  --mdc-filled-text-field-focus-label-text-color: $colorSystemBlack;
+  --mdc-outlined-text-field-focus-outline-color: $colorSystemBlack;
+  --mdc-outlined-text-field-focus-label-text-color: $colorSystemBlack;
+  --mat-datepicker-toggle-active-state-icon-color: $colorSystemBlack
+}

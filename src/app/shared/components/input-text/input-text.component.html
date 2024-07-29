@@ -1,0 +1,5 @@
+<mat-form-field [class]="inputClass" appearance="outline">
+  <mat-label>{{ label | translate }}</mat-label>
+  <input matInput [disabled]="!editable" type="text" [placeholder]="placeholder | translate" [formControl]="control">
+  <mat-icon matSuffix>{{ iconName | translate }}</mat-icon>
+</mat-form-field>

@@ -1,0 +1,49 @@
+<div>
+  <div class="container">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 custom-table">
+    <ng-container *ngFor="let column of displayedColumns" [matColumnDef]="column">
+      <th mat-header-cell *matHeaderCellDef> {{ column | translate }} </th>
+      <td mat-cell *matCellDef="let element">
+        <ng-container
+          *ngIf="column !== 'pageCurrency.table.actions' && column !== 'pageClient.table.status' && column !== 'pageInputCSV.table.status' && column !== 'pageInvoicing.table.actions' && column !== 'pageInvoicingVersion.table.actions'; else actionsColumnDefault">
+          {{ element[column] | translate }}
+        </ng-container>
+
+        <ng-container *ngIf="btnEdit && column === 'general.actions'">
+          <mat-icon (click)="dataEdit(element)" class="icon-edit" fontIcon="edit"></mat-icon>
+        </ng-container>
+
+        <ng-container *ngIf="inpEdit && column === 'pageClientDetails.table.markup' ">
+          <app-input-text [inputClass]="'input-table'" [formGroup]="formGroup" [controlName]="'inpEdit'"></app-input-text>
+        </ng-container>
+
+        <ng-container *ngIf="btnEye && column === 'general.actions'">
+          <mat-icon (click)="nextPage()" class="icon-eye" fontIcon="visibility"></mat-icon>
+        </ng-container>
+ 
+        <ng-container *ngIf="btnDelet && column === 'general.actions'">
+          <mat-icon (click)="onClick(element)"  class="icon-delete" fontIcon="delete"></mat-icon>
+        </ng-container>
+
+        <ng-container *ngIf="btnStatus && column === 'pageClient.table.status'">
+          <mat-icon class="circle" [ngClass]="{'text-green':'green', 'text-yellow':'', 'text-red':''}"
+            fontIcon="circle"></mat-icon>
+        </ng-container>
+
+        <ng-container *ngIf="column === 'pageInputCSV.table.status'">
+          <span [ngClass]="element['pageInputCSV.table.status'] === 'Disponível' ? 'text-green' : 'text-red'">
+            {{ element[column] }}</span>
+        </ng-container>
+
+        <ng-template #actionsColumnDefault>
+        </ng-template>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>
+
+
+  <mat-paginator   [length]="totalItems" [pageSize]="pageSize" [pageSizeOptions]="[5, 10, 25, 100]" (page)="onPageChange($event)" aria-label="Select page"></mat-paginator>
+</div>

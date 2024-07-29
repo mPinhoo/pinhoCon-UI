@@ -1,0 +1,148 @@
+{
+  "general": {
+    "login": "Login",
+    "confirm": "Confirmar",
+    "register": "Cadastrar",
+    "save": "Salvar",
+    "actions": "Ação",
+    "datePicker": "Selecione Ano e Mês",
+    "paginator": {
+      "itemsPerPage": "Itens por página",
+      "nextPage": "Próxima página",
+      "previousPage": "Página anterior",
+      "firstPage": "Primeira página",
+      "lastPage": "Última página",
+      "page": "Página",
+      "of": "de" 
+    }
+  },
+
+  "menu": {
+    "buttonHome": "Home",
+    "buttonFinancial": "Conferências",
+    "buttonAdministration": "Importações",
+    "buttonInvoicing":"Erros de Importação",
+    "button4110":"4110",
+    "buttonViabilidade":"Viabilidade",
+    "button4350":"4350",
+    "buttonExit":"Sair",
+    "buttonLanguage":"PT"
+  },
+
+  "login": {
+    "title": "Entrar",
+    "subTitle": "Registrar-se com Token ou com email cadastrado",
+    "inputUser": "Usuário",
+    "inputPassword": "Senha",
+    "rememberMe": "Lembrar-me",
+    "buttonSingIn": "Entrar",
+    "buttonAzureId": "Token",
+    "forgotPassword": "Esqueci minha senha"
+  },
+
+  "pageHome": {
+    "header": "Home",
+    "title": "Bem-vindo ao Portal CX!",
+    "footer": "Copyright © 2024"
+  },
+
+  "pageCurrency": {
+    "header": "Moeda",
+    "table": {
+      "codeISO": "Código ISO",
+      "symbol": "Símbolo",
+      "currency": "Moeda"
+    }
+  },
+
+  "pageCurrencyAdd": {
+    "header": "Moeda/Cadastro",
+    "inputCodeISO": "Código ISO",
+    "inputSymbol": "Símbolo",
+    "inputName": "Nome",
+    "createdBy": "Criado Por: ",
+    "updatedBy": "Alterado Por: "
+  },
+
+  "pageInputCSV": {
+    "header": "Importação CSV",
+    "buttonInputCSV": "Importar CSV",
+    "table": {
+      "file": "Arquivo",
+      "jobID": "JobID",
+      "user": "Usuário",
+      "date": "Data",
+      "status": "Status"
+    }
+  },
+
+  "pageClient": {
+    "header": "Clientes",
+    "table": {
+      "status": "Status",
+      "customerId": "CustomerID",
+      "customerName": "CustomerNome",
+      "competence": "Vencimento"
+    }
+  },
+
+  "pageClientDetails": {
+    "inputCustomerId": "Customer ID",
+    "inputCustomerName": "Customer Name",
+    "inputCustomerDomainName": "Customer Domain Name",
+    "inputCustomerCountry": "Customer Country",
+    "inputSupportValue": "Support Value",
+    "table": {
+      "productName": "Product Name",
+      "subscriptionId": "Subscription ID",
+      "publisherName": "Publisher Name",
+      "subscriptionStartDate": "Subscription Start Date",
+      "subscriptionEndDate": "Subscription End Date",
+      "markup": "Markup"
+    }
+  },
+
+  "pageInvoicing": {
+    "header": "Faturamento",
+    "table": {
+      "competence": "Competência",
+      "createdBy": "Criado Por",
+      "invoiceNumber": "Invoice Number"
+    }
+  },
+
+  "pageInvoicingVersion": {
+    "header": "Faturamento/Versões",
+    "buttonGenerate": "Gerar",
+    "table": {
+      "version": "Versões",
+      "createdIn": "Criado Em",
+      "createdBy": "Criado Por"
+    }
+  },
+
+  "pageInvoicingVersionDetails": {
+    "header": "Faturamento/Versões/Detalhes",
+    "buttonExportExcel": "Exportar Excel",
+    "table": {
+      "customerName": "Customer Name",
+      "customerCountry": "Customer Country",
+      "skuName": "SKU Name",
+      "quantity": "Quantity",
+      "total": "Total",
+      "tax": "Imposto",
+      "marginNexer": "Margem Nexer",
+      "invoiceValue": "Valor da Fatura",
+      "currency": "Currency",
+      "publisherName": "Publisher Name"
+    },
+    "modal": {
+      "header": "Exportar Fatura",
+      "checkbox": "Exportar todos",
+      "label": "Clientes",
+      "placeholder": "Selecionar clientes",
+      "buttonExportViewClient": "Exportar Visão Cliente",
+      "buttonExportViewNexer": "Exportar Visão Nexer"
+    }
+  }
+}

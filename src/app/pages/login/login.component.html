@@ -1,0 +1,23 @@
+<div class="container" >
+  <div class="container-logo">
+      <img src="assets/images/logo.png" class="image-logo" alt="logo">
+  </div>
+
+  <app-card [header]="'login.title'" [content]="'login.subTitle'">
+
+    <app-input-text [label]="'login.inputUser'" [inputClass]="'input-login'" [iconName]="'person'" [formGroup]="formGroup" [controlName]="'user'"></app-input-text>
+    <br>
+    <app-input-password [label]="'login.inputPassword'" [formGroup]="formGroup" [controlName]="'password'" ></app-input-password>
+    <app-checkbox class="checkbox" [label]="'login.rememberMe'"></app-checkbox>
+    
+    <div class="actions">
+      <app-button buttonClass="button-default" [label]="'login.buttonSingIn'" (sendClick)="auth()" ></app-button>
+
+      <app-button buttonClass="button-azureID" [label]="'login.buttonAzureId'" ></app-button>
+    </div>
+    
+    <div class="footer">
+      <a>{{'login.forgotPassword' | translate}}</a>
+    </div>
+  </app-card>
+</div>

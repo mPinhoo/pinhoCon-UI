@@ -1,0 +1,12 @@
+<app-main-page>
+    <div class="example-button-container">
+        <h1>ALL PORPERTIES </h1>
+        <a mat-fab extended routerLink="/add-properties">
+            <mat-icon>add</mat-icon>
+            Propertie
+        </a>
+    </div>
+    <br>
+    <app-table [displayedColumns]="columns" [dataSource]="resultData" [btnEdit]="true" [btnDelet]="true"
+        (sendClick)="deletePropertie($event)" (edit)="editPropertie($event)"></app-table>
+</app-main-page>

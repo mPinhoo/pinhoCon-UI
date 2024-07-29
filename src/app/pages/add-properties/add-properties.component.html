@@ -1,0 +1,19 @@
+<app-main-page>
+    <div (edit)="(id)">
+        <div class="content">
+            <app-input-text [label]="'Street'" inputClass="input-system" [formGroup]="formGroup"
+                [controlName]="'Street'"></app-input-text>
+            <app-input-text [label]="'Neighborhood'" [formGroup]="formGroup"
+                [controlName]="'Neighborhood'"></app-input-text>
+            <app-input-text [label]="'Number'" [formGroup]="formGroup" [controlName]="'Number'"></app-input-text>
+            <app-input-text [label]="'SalePrice'" [formGroup]="formGroup" [controlName]="'SalePrice'"></app-input-text>
+            <app-input-text [label]="'RentPrice'" [formGroup]="formGroup" [controlName]="'RentPrice'"></app-input-text>
+            <app-input-text [label]="'Status'" [formGroup]="formGroup" [controlName]="'Status'"></app-input-text>
+        </div>
+        <div class="footer">
+            <app-button buttonClass="button-system" [label]="'general.save'" class="btn"
+                (click)="savePropertie()"></app-button>
+        </div>
+    </div>
+
+</app-main-page>

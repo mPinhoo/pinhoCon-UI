@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="icon-area">
+        <button mat-dialog-close class="material-icons icon">close</button>
+    </div>
+    <h2 mat-dialog-title *ngIf="!exportInvoicing">{{ header | translate }}</h2>
+    <div *ngIf="exportInvoicing">
+        <mat-dialog-content>
+            <ng-container *ngIf="exportInvoicing">
+                <app-auto-complete [label]="'pageInvoicingVersionDetails.modal.label'" [myControl]="myFormControl"
+                    [options]="clientList" [filteredOptions]="filteredClientList"
+                    (optionSelected)="itemSelected($event)"></app-auto-complete>
+            </ng-container>
+        </mat-dialog-content>
+
+        <mat-dialog-actions class="btn-footer">
+            <ng-container *ngIf="btnExport">
+                <app-button [label]="'pageInvoicingVersionDetails.buttonExportExcel'" buttonClass="button-system"
+                    [mat-dialog-close]="true"></app-button>
+            </ng-container>
+        </mat-dialog-actions>
+    </div>
+
+    <div *ngIf="importCSV">
+
+        <app-datepicker  [formGroup]="formGroup" [controlName]="'datePicker'"> </app-datepicker>
+
+        <div class="btn">
+            <app-button class="btn-select-file" buttonClass="button-system-file" [label]="'pageInputCSV.buttonInputCSV'"
+                (click)="fileInput.click()">
+                <input type="file" #fileInput accept=".csv" (change)="onFileSelected()">
+            </app-button>
+        </div>
+    </div>
+</div>

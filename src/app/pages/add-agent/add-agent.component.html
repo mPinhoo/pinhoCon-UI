@@ -1,0 +1,15 @@
+<app-main-page>
+    <div (edit)="(id)">
+        <div class="content">
+            <app-input-text [label]="'Name'" [formGroup]="formGroup"[controlName]="'Name'"></app-input-text>
+            <app-input-text [label]="'Documentation'" [formGroup]="formGroup" [controlName]="'Doc'"></app-input-text>
+            <app-input-text [label]="'Creci'" [formGroup]="formGroup" [controlName]="'Creci'"></app-input-text>
+
+        </div>
+        <div class="footer">
+            <app-button buttonClass="button-system" [label]="'general.save'" class="btn"
+                (click)="saveAgent()"></app-button>
+        </div>
+    </div>
+
+</app-main-page>

@@ -1,0 +1,10 @@
+@import './../../../../assets/css/colors';
+
+::ng-deep html {
+  --mdc-filled-text-field-caret-color: $colorSystemBlack;
+  --mdc-filled-text-field-focus-active-indicator-color: $colorSystemBlack;
+  --mdc-filled-text-field-focus-label-text-color: $colorSystemBlack;
+  --mdc-outlined-text-field-focus-outline-color:$colorSystemBlack;
+  --mdc-outlined-text-field-focus-label-text-color: $colorSystemBlack;
+  --mat-datepicker-toggle-active-state-icon-color: $colorSystemBlack
+}

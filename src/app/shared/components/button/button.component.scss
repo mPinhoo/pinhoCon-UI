@@ -1,0 +1,73 @@
+@import '../../../../assets/css/colors';
+
+
+button {
+    cursor: pointer;
+}
+
+.button-default {
+    font-weight: bold;
+    text-align: center;
+    width: 8vw;
+    height: 4vh;
+    border-radius: 10px;
+    border: 1px solid $color-System-Black;
+    background-color: $color-System-White;
+    color: $color-System-Black;
+    margin-right: 15px;
+}
+
+.button-default:hover {
+    background-color: $color-System-Black;
+    color: $color-System-White;
+}
+
+.button-system {
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    min-width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid $color-System-Black;
+    color: $color-System-White;
+    background-color: $color-System-Black;
+}
+
+.button-system:hover {
+    background-color: $color-System-Blue;
+    color: $color-System-White;
+}
+
+.button-system-file {
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    min-width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid $color-System-Black;
+    color: $color-System-White;
+    background-color: $color-System-Black;
+}
+
+.button-system-file:hover {
+    background-color: $color-System-Blue;
+    color: $color-System-White;
+}
+
+.button-azureID {
+    font-weight: bold;
+    border: 1px solid $color-System-Blue;
+    background-color: $color-System-White;
+    text-align: center;
+    width: 8vw;
+    height: 4vh;
+    border-radius: 10px;
+}
+
+.button-azureID:hover {
+    background-color: $color-System-Blue;
+    color: $color-System-White;
+}
+
