@@ -1,37 +1,43 @@
 @import "../../../../assets/css/colors";
 
 mat-panel-title {
-  color: $color-System-White;
+  color: $color-System-Black;
   border: none !important;
   font-size: 12px;
   position: absolute;
 }
 
 mat-expansion-panel {
-  background-color: $color-System-White;
+  background-color: transparent !important; // hover button menu opem
   border: none !important;
 }
 
+button:hover{
+text-decoration: underline red !important;
+}
+
 mat-expansion-panel-header{
-  background-color: $color-System-White;
+  background-color: $color-System-Black;
   border: none !important;
   font-size: 16px;
   padding: 10px;
 }
 
+mat-expansion-panel-header:hover{
+  background-color: $color-System-Red2 !important;
+  color: black !important;
+}
+
 mat-drawer-container {
   position: initial !important;
-  background-color: $color-System-White;
+  background-color: $color-System-Black;
 }
 
 mat-icon {
-  color: $color-System-White;
+  color: $color-System-Black;
   font-size: 20px;
   display: block;
   margin: 0 auto;
-}
-mat-icon:hover {
- color: $color-System-Red
 }
 
 span {
@@ -68,16 +74,15 @@ a{
 }
 
 .logoMenuClose {
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 100%;
+  max-height: 100%;
   display: flex;
-  padding: 15%;
   margin-bottom: 80%;
 }
 
 .logoMenuOpen {
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 75%;
+  max-height: 75%;
   display: flex;
   align-items: center;
   padding-top: 5%;
@@ -103,15 +108,15 @@ a{
 }
 
 .menuClosed {
-  background-color: $color-System-White;
-  color: $color-System-Blue;
+  background-color: $color-System-Black;
+  color: $color-System-Red;
 }
 
 .menuOpen {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: $color-System-White;
+  background-color: $color-System-Black;
   color: $color-System-White;
 }
 
@@ -119,7 +124,7 @@ a{
   width: 100%;
   height: 1%;
   margin-bottom: 40%;
-  background-color: $color-System-White;
+  background-color: $color-System-Black;
   color: $color-System-White;
   border: none !important;
   cursor: pointer;
@@ -129,36 +134,15 @@ a{
 .buttonInt {
   width: 100%;
   height: 1%;
-  background-color: $color-System-White;
-  color: $color-System-Blue;
+  background-color: transparent !important;//alterar para cor do hover
+  color: $color-System-White;
   border: none !important;
   cursor: pointer;
   text-align: start !important;
 }
-.buttonInt:hover {
-  color: $color-System-Red;
-  font-size: 14 bold;
-}
-
-.button:hover {
-  color: $color-System-Red;
-  font-size: 14 bold;
-}
-
-.buttonExit {
-  color: $color-System-White;
-}
-
-.buttonExit:hover {
-  color: $color-System-Red;
-}
 
 .buttonLanguage {
   color: $color-System-White;
-}
-
-.buttonLanguage:hover {
-  color: $color-System-LigthBlue;
 }
 
 .space{
@@ -166,5 +150,5 @@ a{
 }
 
 .iconx{
-  color: $color-System-Blue
+  color: $color-System-White
 }
